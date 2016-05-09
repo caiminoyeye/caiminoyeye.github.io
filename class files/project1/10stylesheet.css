@@ -1,0 +1,53 @@
+header{
+    border-radius:20px; 
+ 
+    float:center;
+    font-family: verdana;
+    font-size: 50px;
+    line-height: 100px;
+    text-transform:uppercase;
+}
+h2{
+	line-height: 100px;
+
+	font-style:oblique;
+	font-family: verdana;
+	color:red;
+	font-weight:normal;
+	background-color:black;
+
+	text-transform:lowercase;
+}
+h3{
+    text-align: center;
+	border-spacing: 10px;
+	font-style:italic;
+    font-weight: bold;
+    float: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+}
+h4{
+    text-align: center;
+	border-spacing: 10px;
+	font-family: Verdana, sans-serif;
+	color: #000000;
+	
+}
+h5{
+	text-align: center;
+	border-spacing: 10px;
+	letter-spacing: -2px;
+	font-family: Vivaldi, cursive; 
+	font-size: 20px;
+	text-transform:uppercase
+}
+h6{
+	text-align: center;
+	margin-right: 10px;
+	border-spacing: 10px;
+
+	font-size: 20px;
+
+}

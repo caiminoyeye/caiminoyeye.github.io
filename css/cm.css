@@ -1,0 +1,163 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica,arial,sans-serif,;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Typography */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FDE1D6;
+}
+
+/* Header + Navigation */
+div.cm {
+    font-family: Harbour;
+    font-size: 1.25em;
+    float: center;
+    padding: 20px;
+    margin-left: 130px;
+    margin-top: 70px;
+    position: absolute;
+    width: 77px;
+    height: 77px;
+    -webkit-animation: squareToCircle 2s .5s infinite alternate;
+}
+
+@-webkit-keyframes squareToCircle {
+    0% {
+        border-radius: 0 0 0 0;
+        background: #FDE1D6;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        border-radius: 50% 0 0 0;
+        background: #FDE1D6;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: #FDE1D6;
+        transform: rotate(90deg);
+    }
+
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: #FDE1D6;
+        transform: rotate(135deg);
+    }
+
+    100% {
+        border-radius: 50% 50% 50% 50%;
+        background: #FDE1D6;
+        transform: rotate(180deg);
+    }
+}
+
+header h1 {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    position: fixed;
+    margin-top: 380px;
+    font-family: harbour;
+    color: #ff0;
+    font-size: 150px;
+    margin-left: 110px;
+}
+
+header div {
+    width: 100%;
+}
+
+div.line {
+    padding: 20px;
+    margin-left: 110px;
+    margin-top: 500px;
+    position: fixed;
+}
+
+.svg-wrapper {
+    height: 9px;
+    margin: 0 auto;
+    position: relative;
+    left: -27%;
+    transform: translateY(5600%);
+    width: 320px;
+}
+
+.shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #000;
+}
+
+.text {
+    overflow: hidden;
+    text-align: center;
+    font-family: helvetica;
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+    }
+
+    100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 3px;
+    }
+}
+
+.svg-wrapper:hover .shape {
+    -webkit-animation: .5s draw linear forwards;
+    animation: .5s draw linear forwards;
+}
+
+/* Media Queries */
+@media screen and (max-width: 780px) {
+    nav {
+        position: fixed;
+        float: left;
+        bottom: 200px;
+    }
+
+    header nav ul li {
+        margin: 0 0 5px;
+        display: block;
+    }
+}

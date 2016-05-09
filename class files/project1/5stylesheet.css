@@ -1,0 +1,48 @@
+header{
+    border-radius:20px; 
+    text-align: center;
+    float:center;
+}
+h2{
+	text-align: center;
+}	
+ 
+h3{
+	border-top: 20px dashed yellow;
+	border-left: 20px dashed yellow;
+	border-right: 20px dashed yellow;
+	border-spacing: 10px;
+	text-align: center;
+	
+}
+h4{
+	border-top: 20px dashed yellow;
+	border-left: 20px dashed yellow;
+	border-right: 20px dashed yellow;
+	border-spacing: 10px;
+	margin-right: 500px;
+}
+h5{
+	border-top: 20px dashed yellow;
+	border-left: 20px dashed yellow;
+	border-right: 20px dashed yellow;
+	border-spacing: 10px;
+	text-align: center;
+	margin-left: 500px;
+}
+h6{
+	border-top: 20px dashed yellow;
+	border-left: 20px dashed yellow;
+	border-right: 20px dashed yellow;
+	border-spacing: 10px;
+	text-align: center;
+	
+}
+p{
+    
+    display: inline-block;
+  
+}    
+*{
+    border: 10px dashed black;
+}  

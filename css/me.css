@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica,arial,sans-serif,;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Typography */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FDE1D6;
+}
+
+/* Header + Navigation */
+header {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+}
+
+div.cm {
+    font-family: Harbour;
+    font-size: 1.25em;
+    float: right;
+    padding: 20px;
+    margin-left: 110px;
+    margin-top: 50px;
+    position: fixed;
+    -webkit-animation: squareToCircle 2s .5s infinite alternate;
+}
+
+@-webkit-keyframes squareToCircle {
+    0% {
+        border-radius: 0 0 0 0;
+        background: #FDE1D6;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        border-radius: 50% 0 0 0;
+        background: #FDE1D6;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: #FDE1D6;
+        transform: rotate(90deg);
+    }
+
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: #FDE1D6;
+        transform: rotate(135deg);
+    }
+
+    100% {
+        border-radius: 50% 50% 50% 50%;
+        background: #FDE1D6;
+        transform: rotate(180deg);
+    }
+}
+
+div h1 {
+    font-size: 15px;
+}
+
+header nav {
+    float: right;
+    font-size: 8px;
+    padding: 15px;
+    font-family: helvetica;
+    margin-right: 110px;
+    margin-top: 80px;
+    word-spacing: 40px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 1em;
+    text-decoration: underline;
+}
+
+header nav ul li a {
+    font-size: 2em;
+}
+
+div.content {
+    font-family: helvetica;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 20px;
+    margin-left: 150px;
+    margin-top: 200px;
+    margin-bottom: 1em;
+}
+
+div.content p {
+    text-decoration: underline;
+}
+
+/* Layyout */
+.container {
+    max-width: 980px;
+    margin: 60px auto;
+}
+
+ul.thumbnails {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.thumbnails li.thumb {
+    margin: 15px;
+    width: 280px;
+}
+
+/* Footer */
+footer {
+    max-width: 980px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 780px) {
+    nav {
+        position: fixed;
+        float: left;
+        bottom: 200px;
+    }
+
+    header nav ul li {
+        margin: 0 0 5px;
+        display: block;
+    }
+}
